@@ -46,3 +46,20 @@ group :development do
   # gem "spring"
 end
 
+# Rack Cors
+gem 'rack-cors'
+
+#Devise
+gem 'devise'
+
+# Rswag
+gem 'rswag'
+
+# Token gems
+gem 'jwt'
+
+gem 'devise-jwt'
+
+gem 'warden-jwt_auth'
+
+gem 'dotenv-rails', groups: [:development, :test]
