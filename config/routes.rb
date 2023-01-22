@@ -4,9 +4,10 @@ Rails.application.routes.draw do
       registrations: 'users/registrations'
   }
   namespace :api, defaults: { format: 'json' } do
-      resources :users
       post :auth, to: 'authentication#create'
       get  '/auth' => 'authentication#fetch'
+      resources :users
+      resources :books
   end
   namespace :v2 do
       # Things yet to come
